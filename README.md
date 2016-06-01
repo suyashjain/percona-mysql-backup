@@ -4,7 +4,7 @@ Percon innobackupex takes the hotbackup and does not locks the database tables.
 
 Steps:-
 
-(1)mysql user for innobackupex
+<h1>(1)mysql user for innobackupex</h1>
 
 innobackupex connects the mysql using user/pass , so first create a user for backup purpose.
 
