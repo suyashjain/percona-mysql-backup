@@ -27,20 +27,17 @@ Link:- https://www.percona.com/downloads/XtraBackup/
 I have created a configuration file named /etc/mysql-backup.conf which contains the base backup directory path where all the backups will take place. Also it contains the mysql username and password which will be used by innobackupex to take the backup.
 
 contents of configurtion file.
-
-<code>
 <pre>
 BACKUP_BASE_DIR=/var/backup
 MYSQL_USER=repl
 MYSQL_PWD='repl123'
 </pre>
-</code>
 
 <h2>(4) copy the script files </h2>
 
 copy the mysql-full-backup.sh and mysql-inc-backup.sh into /usr/bin
 
-<h2>()Add crontan entries</h2>
+<h2>(5)Add crontan entries</h2>
 <pre>
 0 0 * * mon root /usr/bin/mysql-full-backup.sh
 */30 * * * * root /usr/bin/mysql-inc-backup.sh
