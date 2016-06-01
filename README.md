@@ -24,11 +24,11 @@ I have created a configuration file named /etc/mysql-backup.conf which contains 
 
 contents of configurtion file.
 <code>
+<pre>
 BACKUP_BASE_DIR=/var/backup
-
 MYSQL_USER=repl
-
 MYSQL_PWD='repl123'
+</pre>
 </code>
 
 
