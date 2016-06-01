@@ -42,7 +42,19 @@ copy the mysql-full-backup.sh and mysql-inc-backup.sh into /usr/bin
 0 0 * * mon root /usr/bin/mysql-full-backup.sh
 */30 * * * * root /usr/bin/mysql-inc-backup.sh
 
-Thats it.
 </pre>
 
+Thats it.
 
+
+Sample Directory Structure
+<pre>
+/var/backup
+/var/backup/2016-06-01
+/var/backup/2016-06-01/full
+/var/backup/2016-06-01/inc/
+/var/backup/2016-06-01/inc/2016-06-01-15-40-08  
+/var/backup/2016-06-01/inc/2016-06-01-15-41-49  
+/var/backup/2016-06-01/inc/2016-06-01-15-44-20  
+/var/backup/2016-06-01/inc/2016-06-01-15-41-18
+</pre>
