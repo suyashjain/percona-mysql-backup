@@ -41,6 +41,8 @@ copy the mysql-full-backup.sh and mysql-inc-backup.sh into /usr/bin
 <pre>
 0 0 * * mon root /usr/bin/mysql-full-backup.sh
 */30 * * * * root /usr/bin/mysql-inc-backup.sh
+
+Thats it.
 </pre>
 
 
